@@ -1,0 +1,189 @@
+
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+body {
+  overflow-x: hidden;
+}
+.container-fluid{
+  padding: 0px;
+}
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding: 0px;
+}
+.navbar{
+   background: #373737;
+}
+
+#wrapper.toggled {
+  padding-left: 250px;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+   background: #601414;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+}
+i{
+  color: white;
+}
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 5px;
+
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+    color: white;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+ color: white;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+  height: 35px;
+  font-size: 15px;
+  line-height: 40px;
+ color: #a49898;
+  text-indent: none;
+  background: #3d0d0d;
+  background: #3d0d0d;
+}
+
+.sidebar-nav>.sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+.addform{
+  margin-left: auto;
+  margin-right: auto;
+width: 90%;
+  padding: 10px;
+  border-bottom: solid black 2px;
+}
+
+.btn:hover{
+background: #601414;
+  color: white;
+}
+.table{
+  margin-top: 10px;
+  border: solid black 1px;
+}
+th{
+  background-color: #601414;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-right: solid white 1px;
+}
+td{
+ text-align: center;
+  font-weight: bold;
+  border: solid black 1px;
+}
+.container{
+  overflow: auto;
+}
+.page-header{
+  padding-left: 30px;
+  font-weight: bold;
+  margin-bottom:0px;
+}
+.right{
+  padding-left: 400px;
+  margin-top: -80px;
+}
+
+@media screen and (max-width:768px) {
+  #wrapper {
+    padding-left: 0;
+  }
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
+  #sidebar-wrapper {
+    width: 0;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+  #page-content-wrapper {
+    padding: 0px;
+    position: relative;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+    overflow: hidden;
+  }
+  .right{
+    padding: 0px;
+    margin: 0px;
+  }
+  .form-group{
+    padding-top: 0px;
+    padding-bottom: 2px;
+    border-bottom: solid black 1px;
+  }
+}
+
