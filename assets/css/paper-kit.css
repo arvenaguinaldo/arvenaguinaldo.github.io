@@ -4256,10 +4256,10 @@ textarea.form-control {
     margin-bottom: -35px;
   }
 
-  .presentation-title {
-    font-size: 2em;
+ /* .presentation-title {
+    font-size: 4em;
   }
-
+*/
   .presentation-subtitle {
     margin-top: 40px;
   }
@@ -4772,7 +4772,8 @@ textarea.form-control {
     margin-bottom: 2em;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) { 
+
   .navbar-collapse {
     position: fixed;
     display: block;
@@ -5832,7 +5833,7 @@ textarea.form-control {
 }
 
 .title-brand {
-  max-width: 100%;
+  max-width: 1000px;
   margin: 10px auto;
   position: relative;
   text-align: center;
@@ -5851,11 +5852,19 @@ textarea.form-control {
   right: -15px;
 }
 
+@font-face {
+  font-family:'Montserrat-Thin';
+  src: url('../fonts/Montserrat-Thin.ttf');
+  src: url('../fonts/Montserrat-Thin.ttf') format('ttf'),
+  url('../fonts/Montserrat-Thin.ttf') format('truetype');
+}
+
 .presentation-title {
   font-size: 8vw;
   font-weight: 300;
   margin: 0;
   color: #FFFFFF;
+  font-family: 'Montserrat-Thin', sans-serif;
   /*background: #fbf8ec;*/
 /*  background: -moz-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
   background: -webkit-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
@@ -5868,6 +5877,7 @@ textarea.form-control {
 .presentation-subtitle {
   font-size: 1.7em;
   color: #FFFFFF;
+  font-family: 'Montserrat-Thin', sans-serif;
 }
 
 .category-absolute {
