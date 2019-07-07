@@ -12,12 +12,10 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
+    <link rel="stylesheet" href="style.css">
+
     <!-- Bootstrap core CSS     -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="assets/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
-
-	<!--  CSS for Demo Purpose, don't include it in your project     -->
-	<link href="assets/css/demo.css" rel="stylesheet" />
 
     <!--     Fonts and icons     -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
@@ -27,68 +25,53 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md fixed-top navbar-transparent" color-on-scroll="500">
+    <nav class="navbar navbar-expand-md fixed-top fixed-top navbar-dark bg-transparent" color-on-scroll="500">
         <div class="container">
-            <div class="navbar-translate">
-                <button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-bar"></span>
-                    <span class="navbar-toggler-bar"></span>
-                    <span class="navbar-toggler-bar"></span>
-                </button>
                 <a class="navbar-brand" href="https://www.arvenaguinaldo.com">arvencaguinaldo</a>
-            </div>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <!-- <span class="icon-bar"></span> -->
+                    <!-- <span class="icon-bar"></span> -->
+                    <!-- <span class="fal fa-bars"></span> -->
+                    <!-- <span class="navbar-toggler-bar"></span> -->
+                    <!-- <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span> -->
+                </button>
+
             <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto text-center">
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/arvencaguinaldo" target="_blank">
-                            <i class="fa fa-twitter"></i>
-                            <p class="d-lg-none">Twitter</p>
-                        </a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/arvencaguinaldo" target="_blank">
-                            <i class="fa fa-facebook-square"></i>
-                            <p class="d-lg-none">Facebook</p>
-                        </a>
+                        <a class="nav-link" href="#">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/arvencaguinaldo" target="_blank">
-                            <i class="fa fa-instagram"></i>
-                            <p class="d-lg-none">Instagram</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="Star on GitHub" data-placement="bottom" href="https://www.github.com/arvenaguinaldo" target="_blank">
-                            <i class="fa fa-github"></i>
-                            <p class="d-lg-none">GitHub</p>
-                        </a>
+                       <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="wrapper">
-        <div class="page-header section-dark" style="background-image: url('assets/img/login-image.jpg')">
-            <div class="filter"></div>
-    		<div class="content-center">
-    			<div class="container">
-    				<div class="title-brand">
-    					<h1 class="presentation-title">Arven Aguinaldo</h1>
-    				<!-- 	<div class="fog-low">
-    						<img src="assets/img/fog-low.png" alt="">
-    					</div> -->
-    					<!-- <div class="fog-low right">
-    						<img src="assets/img/fog-low.png" alt="">
-    					</div> -->
-    				</div>
 
-    				<h2 class="presentation-subtitle text-center">Full Stack Developer</h2>
-    			</div>
-    		</div>
-            <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); ">
-
+    <div class="landing">
+        <div class="home-wrap">
+            <div id="particles-js" class="home-inner">
             </div>
-    	</div>
+        </div>
+    </div>
+
+    <div class="caption center-block text-center">
+        <div class="image-cropper">
+            <img src="assets/img/arven-image.jpg">
+        </div>
+        <h3>>Hi, I'm Arven!_</h3>
+        <h4>Front-End Developer</h4>
+    </div>
+
+    <div id="about">
+        <!-- <h3 class="heading">About</h3> -->
+    </div>
 </body>
 
 <!-- Core JS Files -->
@@ -107,7 +90,14 @@
 <script src="assets/js/moment.min.js"></script>
 <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
 
-<!--  Paper Kit Initialization and functons -->
-<script src="assets/js/paper-kit.js?v=2.1.0"></script>
+<!-- Particles Animation -->
+<script src="assets/js/particles.js"></script>
+<script src="assets/js/particles.min.js"></script>
+
+<script>
+    particlesJS.load('particles-js', 'assets/json/particles.json', function() {
+    // console.log('callback - particles.js config loaded');
+});
+</script>
 
 </html>
