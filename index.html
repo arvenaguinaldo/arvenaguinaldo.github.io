@@ -12,7 +12,10 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- AOS  -->
+    <link rel="stylesheet" type="text/css" href="plugins/aos.css">
 
     <!-- Bootstrap core CSS     -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -41,10 +44,13 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto text-center">
                     <li class="nav-item">
+                        <a class="nav-link" href="#particles-js">Home</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
                        <a class="nav-link" href="#">Contact</a>
@@ -70,8 +76,102 @@
     </div>
 
     <div id="about">
-        <!-- <h3 class="heading">About</h3> -->
+        <h3 class="heading">About</h3>
+        <div class="about-inner center-block text-center row">
+            <div data-aos="fade-right" class="col-md-4">
+                <img id="about-image" src="assets/img/arven-image.jpg">
+            </div>
+            <div class="col-md-8 text-left" data-aos="fade-up">
+                <h3 class="about-position">Front-End Developer</h3>
+                <p class="about-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="assets/files/ArvenAguinaldo-Resume.pdf" class="btn btn-outline-dark" download> Download Resume </a>
+            </div>
+        </div>
     </div>
+
+    <div id="skills">
+        <h3 class="heading text-light">Skills</h3>
+
+        <div class="skills-inner row">
+            <div data-aos="zoom-in-up" class="skills-container text-center col-lg-3">
+                <div class="skills-logo-container">
+                    <img id="skills-html" class="skills-logo" src="assets/img/skills-logo/HTML.png">
+                </div>
+                <h2 class="skills-name text-center text-light text-uppercase">HTML5</h2>
+            </div>
+            <div data-aos="zoom-in-up" class="skills-container text-center col-lg-3">
+                <div class="skills-logo-container">
+                    <img id="skills-css" class="skills-logo" src="assets/img/skills-logo/CSS.png">
+                </div>
+                <h2 class="skills-name text-center text-light text-uppercase">CSS3</h2>
+            </div>
+            <div data-aos="zoom-in-up" class="skills-container text-center col-lg-3">
+                <div class="skills-logo-container">
+                    <img id="skills-js" class="skills-logo" src="assets/img/skills-logo/JS.png">
+                </div>
+                <h2 class="skills-name text-center text-light text-uppercase">JS</h2>
+            </div>
+            <div data-aos="zoom-in-up" class="skills-container text-center col-lg-3">
+                <div class="skills-logo-container">
+                    <img id="skills-php" class="skills-logo" src="assets/img/skills-logo/PHP.png">
+                </div>
+                <h2 class="skills-name text-center text-light text-uppercase">PHP</h2>
+            </div>
+
+             <div data-aos="zoom-in-up" class="skills-container text-center col-lg-3">
+                <div class="skills-logo-container">
+                    <img id="skills-react" class="skills-logo" src="assets/img/skills-logo/REACT.png">
+                </div>
+                <h2 class="skills-name text-center text-light text-uppercase">REACT</h2>
+            </div>
+            <div data-aos="zoom-in-up" class="skills-container text-center col-lg-3">
+                <div class="skills-logo-container">
+                    <img id="skills-ror" class="skills-logo" src="assets/img/skills-logo/ROR.png">
+                </div>
+                <h2 class="skills-name text-center text-light text-uppercase">Ruby on Rails</h2>
+            </div>
+            <div data-aos="zoom-in-up" class="skills-container text-center col-lg-3">
+                <div class="skills-logo-container">
+                    <img id="skills-laravel" class="skills-logo" src="assets/img/skills-logo/LARAVEL.png">
+                </div>
+                <h2 class="skills-name text-center text-light text-uppercase">LARAVEL</h2>
+            </div>
+            <div data-aos="zoom-in-up" class="skills-container text-center col-lg-3">
+                <div class="skills-logo-container">
+                    <img id="skills-mysql" class="skills-logo" src="assets/img/skills-logo/MYSQL.png">
+                 </div>
+                <h2 class="skills-name text-center text-light text-uppercase">MYSQL</h2>
+            </div>
+            <div data-aos="zoom-in-up" class="skills-container text-center col-lg-4">
+                <div class="skills-logo-container">
+                    <img id="skills-postgresql" class="skills-logo" src="assets/img/skills-logo/POSTGRESQL.png">
+                </div>
+                <h2 class="skills-name text-center text-light text-uppercase">POSTGRESQL</h2>
+            </div>
+            <div data-aos="zoom-in-up" class="skills-container text-center col-lg-4">
+                <div class="skills-logo-container">
+                    <img id="skills-git" class="skills-logo" src="assets/img/skills-logo/GIT.png">
+                </div>
+                <h2 class="skills-name text-center text-light text-uppercase">GIT</h2>
+            </div>
+            <div data-aos="zoom-in-up" class="skills-container text-center col-lg-4">
+                <div class="skills-logo-container">
+                    <img id="skills-git" class="skills-logo" src="assets/img/skills-logo/PS.png">
+                </div>
+                <h2 class="skills-name text-center text-light text-uppercase">Photoshop</h2>
+            </div>
+        <div>
+
+    </div>
+
+
+    <script src="plugins/aos.js"></script>
+    <script> AOS.init(); </script>
 </body>
 
 <!-- Core JS Files -->

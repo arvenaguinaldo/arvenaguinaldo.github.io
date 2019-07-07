@@ -1,6 +1,7 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  background-color: #FFFFFF: 
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td, button, input, select, textarea {
@@ -15,9 +16,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
   background: transparent;
 }
 
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #e9ecef;
+  z-index: -1;
+}
+
 .home-inner {
-  background-image: url('assets/img/wallhaven-j8lrry.jpg');
-  /*background-color: black;*/
+  /*background-image: url('assets/img/wallhaven-j8lrry.jpg');*/
+  background-color: black;  
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
@@ -45,7 +54,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
 .image-cropper img {
   display: inline;
   margin-top: -30px;   
-  height: 199px;
+  height: 200px;
   width: auto;
 }
 
@@ -60,20 +69,127 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
 
 .caption h4 {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica", Arial, sans-serif;
-  /*padding-top: 30px;*/
 }
 
+@media only screen and (max-width: 415px) {
+  .caption h3 {
+    font-size: 2.3rem;
+  }
 
+  .caption h4 {
+    font-size: 0.9rem;
+  }
+}
 
-
-
-.landing {
-  position: relative;
+#about {
   width: 100%;
-  height: 100vh;
-  background: #e9ecef;
-  z-index: -1;
+  padding: 10px;
+  padding-bottom: 30px;
 }
+
+.heading {
+  font-size: 2.3rem;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+}
+
+.about-inner {
+  /*background-color: blue;*/
+  height: 100%; 
+  width: 80%;
+  margin: auto !important;
+}
+
+#about-image {
+  width: 70%;
+  height: auto;
+  padding: 10px;
+}
+
+.about-position {
+  padding: 10px;
+  padding-left: unset;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+}
+
+.about-paragraph {
+  padding: 10px;
+  padding-left: unset;
+  text-align: left;
+  /*text-transform: uppercase;*/
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+}
+
+#skills {
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 30px;
+  background-color: black;
+}
+
+.skills-inner {
+  height: 100%; 
+  width: 80%;
+  margin: auto !important;
+}
+
+.skills-container {
+  width: 100px;
+  height: 250px;
+}
+
+.skills-logo-container {
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+  height: 180px;
+}
+
+.skills-logo {
+  margin: 0 auto;
+  width: auto;
+  height: 150px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.skills-name {  
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+}
+
+#skills-php {
+  margin-top: 30px;
+  margin-left: -20px;
+  width: 250px;
+  height: auto;
+}
+
+
+#skills-ror {
+  margin-top: 50px;
+  margin-left: -30px;
+  width: 250px;
+  height: 100px;
+}
+
+#skills-laravel{
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+#skills-mysql {
+  margin-top: 20px;
+  width: 200px;
+  height: 150px;
+}
+
