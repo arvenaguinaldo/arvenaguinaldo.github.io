@@ -17,43 +17,46 @@
     <!-- AOS  -->
     <link rel="stylesheet" type="text/css" href="plugins/aos.css">
 
+
     <!-- Bootstrap core CSS     -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <!-- Splitting -->
+    <link rel="stylesheet" type="text/css" href="assets/css/splitting.css">
+    <link rel="stylesheet" href="plugins/splitting.css" />
+    <link rel="stylesheet" href="plugins/splitting-cells.css" />
 
     <!--     Fonts and icons     -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
 
+    
+
+
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-md fixed-top fixed-top navbar-dark bg-transparent" color-on-scroll="500">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar shrink navbar-expand-md navbar-inverse navbar-dark fixed-top" color-on-scroll="500">
         <div class="container">
-                <a class="navbar-brand" href="https://www.arvenaguinaldo.com">arvencaguinaldo</a>
+                <a class="navbar-brand blur-it" data-splitting href="#home">arvencaguinaldo</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    <!-- <span class="icon-bar"></span> -->
-                    <!-- <span class="icon-bar"></span> -->
-                    <!-- <span class="fal fa-bars"></span> -->
-                    <!-- <span class="navbar-toggler-bar"></span> -->
-                    <!-- <span class="navbar-toggler-bar"></span>
-                    <span class="navbar-toggler-bar"></span> -->
+                    <span class="navbar-toggler-icon text-light"></span>
                 </button>
 
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto text-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#particles-js">Home</a>
+                        <a id="nav-home" class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a id="nav-about" class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
+                        <a id="nav-skills" class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                       <a class="nav-link" href="#">Contact</a>
+                       <a id="nav-contact" class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -61,7 +64,7 @@
     </nav>
 
     <div class="landing">
-        <div class="home-wrap">
+        <div id="home" class="home-wrap">
             <div id="particles-js" class="home-inner">
             </div>
         </div>
@@ -76,22 +79,25 @@
     </div>
 
     <div id="about">
-        <h3 class="heading">About</h3>
-        <div class="about-inner center-block text-center row">
-            <div data-aos="fade-right" class="col-md-4">
-                <img id="about-image" src="assets/img/arven-image.jpg">
-            </div>
-            <div class="col-md-8 text-left" data-aos="fade-up">
-                <h3 class="about-position">Front-End Developer</h3>
-                <p class="about-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="assets/files/ArvenAguinaldo-Resume.pdf" class="btn btn-outline-dark" download> Download Resume </a>
+        <div id="about-container">
+            <!-- <h3 class="heading">About</h3> -->
+            <div class="about-inner center-block text-center row">
+                <div data-aos="fade-right" class="col-lg-4">
+                    <img id="about-image" src="assets/img/arven-image.jpg">
+                </div>
+                <div class="col-lg-8 text-left" data-aos="fade-up">
+                    <h3 class="about-position">Front-End Developer</h3>
+                    <p class="about-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="assets/files/ArvenAguinaldo-Resume.pdf" class="btn btn-outline-light" download> Download Resume </a>
+                </div>
             </div>
         </div>
+        
     </div>
 
     <div id="skills">
@@ -116,7 +122,7 @@
                 </div>
                 <h2 class="skills-name text-center text-light text-uppercase">JS</h2>
             </div>
-            <div data-aos="zoom-in-up" class="skills-container text-center col-lg-3">
+            <div data-aos="zoom-in-up" class="skills-cont`ainer text-center col-lg-3">
                 <div class="skills-logo-container">
                     <img id="skills-php" class="skills-logo" src="assets/img/skills-logo/PHP.png">
                 </div>
@@ -166,12 +172,48 @@
                 <h2 class="skills-name text-center text-light text-uppercase">Photoshop</h2>
             </div>
         <div>
-
     </div>
 
+    <div id="contact">
+        <div id="contact-container">
+            <h3 class="heading">Contact</h3>
+            <div class="contact-inner center-block row">
+                <div data-aos="fade-right" class="col-lg-8">
+                    <form method="post" class="form" role="form">
+                        <div class="row">
+                            <div class="col-lg-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required />
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="message" name="message" placeholder="Message" rows="10" required></textarea>
+                        <br>
+                        <div class="col-lg-12 form-group">
+                            <button class="btn btn-outline-light" type="submit"> SEND MESSAGE </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-details col-lg-4 text-left" data-aos="fade-up">
+                    <i class="contact-icon fa fa-envelope text-light"></i>
+                    <h5 class="contaxt-text text-light">arvencaguinaldo@gmail.com</h5>
+                    <br>
+                    <br>
+                    <i class="contact-icon fa fa-map-marker text-light"></i>
+                    <h5 class="contaxt-text text-light">Bulacan, Philippines</h5>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- AOS -->
     <script src="plugins/aos.js"></script>
     <script> AOS.init(); </script>
+
+    <!-- Splitting -->
+    <script src="plugins/splitting.min.js"></script>
+    <script> Splitting(); </script>
 </body>
 
 <!-- Core JS Files -->
@@ -199,5 +241,7 @@
     // console.log('callback - particles.js config loaded');
 });
 </script>
+
+<script src="assets/js/main.js"></script>
 
 </html>
