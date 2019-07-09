@@ -428,6 +428,24 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
   }
 }
 
+#footer {
+  width: 70%;
+  margin: auto;
+  height: 130px;
+  padding-top: 10px;
+  /*padding: 70px 10px 40px 10px;*/
+  background-color: #111111; 
+  border-radius: 5px;
+}
+
+#rights {
+  width: 330px;
+  margin: 0 auto;
+  color: #FFF;
+  padding-top: 30px;
+  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+}
+
 
 
 
