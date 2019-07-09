@@ -1,3 +1,5 @@
+
+// NAV BAR SCROLL
 $(window).scroll(function() {
   $scrollTop = $(document).scrollTop();
   if ($scrollTop > 800) {
@@ -9,6 +11,7 @@ $(window).scroll(function() {
   }
 });
 
+// SMOOTH SCROLL
 $('.nav-link').on('click', function(e){
   if (this.hash !== ''){
     e.preventDefault();
@@ -24,6 +27,7 @@ $('.nav-link').on('click', function(e){
   }
 })
 
+// POSITION TYPEWRITER ANIMATION
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;
