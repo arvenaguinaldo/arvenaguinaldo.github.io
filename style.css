@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  /*font-family: "Montserrat", "Helvetica", Arial, sans-serif;*/
   background-color: #000000 !important;
   /*position: relative;*/
 }
@@ -383,7 +383,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
 
 @media only screen and (max-width: 1430px) {
   #contact-container {
-    width: 100%;
+    width: 90%;
   }
 }
 
