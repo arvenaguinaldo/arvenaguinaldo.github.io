@@ -1,11 +1,3 @@
-
-// LightBox / Modal
-// $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-//       event.preventDefault();
-//       $(this).ekkoLightbox();
-// });
-
-
 // NAV BAR SCROLL
 $(window).scroll(function() {
   $scrollTop = $(document).scrollTop();

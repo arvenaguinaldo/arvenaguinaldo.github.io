@@ -392,16 +392,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
   padding-top: 30px;
   height: 100%; 
   margin: 0 auto !important;
-  width: 90%;
+  width: 70%;
 }
 
 .portfolio-card {
-  border-radius: 0px !important;
   border: 0px !important;
   width: 18rem !important;
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding: unset !important;
   cursor: pointer;
 }
@@ -410,8 +409,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   transition: 0.5s;
-  /*object-fit: cover;*/
-  /*height: 140px !important;*/
 }
 
 #portfolio-influencer-img {
