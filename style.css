@@ -478,7 +478,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
   color: white;
   /*text-transform: uppercase;*/
   font-family: "Montserrat", "Helvetica", Arial, sans-serif;
-  text-decoration-: none;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 430px) {
